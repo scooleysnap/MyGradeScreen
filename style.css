@@ -25,6 +25,14 @@ body {
 	padding: 0 12px;
 }
 
+h1{
+	color: #fff;
+	font-size: 24px;
+	font-weight: 200;
+	position: relative;
+	display: inline-block;
+}
+
 /* Meter Styles */
 .grade-meter{
 	height: 18px;
@@ -211,13 +219,11 @@ td:first-child, th:first-child{
 
 /* breakdown styles */
 
-.breakdown h1{
-	color: #fff;
-	font-size: 24px;
-	font-weight: 200;
-	position: relative;
-	display: inline-block;
+.breakdown{
+	margin: 12px 0 0 0;
 }
+
+
 
 .breakdown h1:before{
 	content: attr(data-grade);
@@ -270,9 +276,6 @@ td:first-child, th:first-child{
 	float: left;
 }
 
-.row>div:last-child{
-	float: right;
-}
 
 .grade-circle{
 	width: 46px;
@@ -305,9 +308,55 @@ td:first-child, th:first-child{
 .divider {
 	width: 1px;
 	height: 60px;
-	background: #fff;
+	background: #929292;
 	float:left;
 	margin: 3px 6px 0;
+}
+
+
+.arrow{
+	width: 10px;
+	height: 18px;
+	padding-top: 16px;
+	float: right;
+}
+
+/* improve section */
+.improve {
+	margin: 12px 0 0 0;
+}
+
+.improve>ul{
+	color: #fff;
+	list-style: none;
+	font-size: 16px;
+	font-weight: 200;
+	padding-left: 18px;
+	margin: 0;
+
+
+}
+
+.improve>ul>li{
+	margin: 0;
+	padding: 0 12px 2px 0;
+	border-bottom: 1px solid #929292;
+	position: relative;
+
+}
+
+.improve>ul>li:after{
+	content: '>';
+	font-size: 16px;
+	color: #fff;
+	font-weight: 200;
+	position: absolute;
+	top:0;
+	right:0;
+}
+
+.improve>ul>li>.points{
+	float: right;
 }
 
 /* transitions */
